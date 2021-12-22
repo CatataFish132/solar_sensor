@@ -3,7 +3,7 @@
 def web_page():
   bme = BME280.BME280(i2c=i2c)
   
-  html = """<html><head><meta name="viewport" content="width=device-width, initial-scale=1">
+  html = """<html><head><meta http-equiv="refresh" content="1"><meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="data:,"><style>body { text-align: center; font-family: "Trebuchet MS", Arial;}
   table { border-collapse: collapse; width:35%; margin-left:auto; margin-right:auto; }
   th { padding: 12px; background-color: #0043af; color: white; }
