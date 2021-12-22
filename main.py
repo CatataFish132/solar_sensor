@@ -43,3 +43,4 @@ while True:
   except OSError as e:
     conn.close()
     print('Connection closed')
+    print(e)

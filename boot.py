@@ -19,7 +19,7 @@ gc.collect()
 import BME280
 
 # ESP32 - Pin assignment
-i2c = I2C(scl=Pin(22), sda=Pin(21), freq=10000)
+i2c = I2C(0)
 # ESP8266 - Pin assignment
 #i2c = I2C(scl=Pin(5), sda=Pin(4), freq=10000)
 
