@@ -1,1 +1,1 @@
-{"password": "ssid", "ssid": "password"}
+{"password": "ssid", "ssid": "password", "gain": gain, "offset": offset, "solar_panel_value": v*m2/w}
