@@ -71,7 +71,7 @@ class Program:
     # read bme
     bme = BME280.BME280(i2c=i2c)
     # read solar sensor
-    solar = int(self.solar_sensor.read_gross())
+    solar = int(self.solar_sensor.read_netto())
     temp = bme.temperature
     # read date
     year, month, mday, hour, minute, second, weekday, yearday = time.localtime()
