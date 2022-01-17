@@ -16,7 +16,7 @@ class Program:
     def read_netto(self):
       bme = BME280.BME280(i2c=i2c)
       diff_t = float(bme.temperature.strip("C"))-25
-      netto = self.read_netto()
+      netto = self.read_gross()
       return netto - netto*0.004*diff_t
 
     # read solar sensor voltage
