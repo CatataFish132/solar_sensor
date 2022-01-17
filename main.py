@@ -56,7 +56,7 @@ class Program:
     tr:hover { background-color: #bcbcbc; }
     td { border: none; padding: 12px; }
     .sensor { color:white; font-weight: bold; background-color: #bcbcbc; padding: 1px;
-    </style></head><body><h1>ESP with BME280</h1>
+    </style></head><body><h1>Solar Sensor</h1>
     <table><tr><th>MEASUREMENT</th><th>VALUE</th></tr>
     <tr><td>Solar Power Netto</td><td><span class="sensor">""" + str(self.solar_sensor.read_netto()) + """</span></td></tr>
     <tr><td>Solar Power Gross</td><td><span class="sensor">""" + str(self.solar_sensor.read_gross()) + """</span></td></tr>
