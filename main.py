@@ -9,11 +9,11 @@ class Program:
         self.adc.width(ADC.WIDTH_12BIT)
 
     # calculate Netto sun power
-    def read_netto(self):
+    def read_gross(self):
       return ((self.read_voltage()-(config["offset"]))/config["gain"])/(config["solar_panel_value"])
 
     # calculate gross sun power
-    def read_gross(self):
+    def read_netto(self):
       bme = BME280.BME280(i2c=i2c)
       diff_t = float(bme.temperature.strip("C"))-25
       netto = self.read_netto()
